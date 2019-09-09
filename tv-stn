@@ -1,0 +1,174 @@
+#########################################################################
+##                                                                     ##
+##                 全国民放テレビ局一覧表   (2004年8月10日現在)        ##
+##                                                                     ##
+##  略称<tab>チャンネル<tab>コールサイン<tab>系列<tab>局名[<tab>備考]  ##
+##                                                                     ##
+#########################################################################
+#
+#北海道
+STV	5	JOKX	NNN	札幌テレビ放送
+HBC	1	JOHR	JNN	北海道放送
+UHB	27	JOBM	FNN	北海道文化放送
+HTB	35	JOHH	ANN	北海道テレビ放送
+TVH	17	JOHI	TXN	テレビ北海道
+#青森
+RAB	1	JOGR	NNN	青森放送
+ATV	38	JOAI	JNN	青森テレビ
+ABA	34	JOAH	ANN	青森朝日放送
+#岩手
+TVI	35	JOII	NNN	テレビ岩手
+IBC	6	JODF	JNN	岩手放送
+MIT	33	JOYH	FNN	岩手めんこいテレビ
+IAT	31	JOIY	ANN	岩手朝日テレビ
+#宮城
+MMT	34	JOMM	NNN	宮城テレビ放送	ミヤギテレビ
+TBC	1	JOIR	JNN	東北放送
+OX	12	JOOX	FNN	仙台放送
+KHB	32	JOEM	ANN	東日本放送
+#秋田
+ABS	11	JOTR	NNN	秋田放送
+AKT	37	JOBI	FNN	秋田テレビ
+AAB	31	JOXX	ANN	秋田朝日放送
+#山形
+YBC	10	JOEF	NNN	山形放送
+TUY	36	JOWI	JNN	テレビユー山形
+SAY	30	JOCY	FNN	さくらんぼテレビジョン
+YTS	38	JOYI	ANN	山形テレビ
+#福島
+FCT	33	JOVI	NNN	福島中央テレビ
+TUF	31	JOKI	JNN	テレビユー福島
+FTV	11	JOPX	FNN	福島テレビ
+KFB	35	JOJI	ANN	福島放送
+#新潟
+TeNY	29	JOPI	NNN	テレビ新潟放送網	旧略称:TNN
+BSN	5	JODR	JNN	新潟放送
+NST	35	JONH	FNN	新潟総合テレビ
+NT21	21	JOUX	ANN	新潟テレビ21
+#長野
+TSB	30	JONI	NNN	テレビ信州
+SBC	11	JOSR	JNN	信越放送
+NBS	38	JOLH	FNN	長野放送
+ABN	20	JOGH	ANN	長野朝日放送
+#山梨
+YBS	5	JOJF	NNN	山梨放送
+UTY	37	JOGI	JNN	テレビ山梨
+#首都圏地区
+NTV	4	JOAX	NNN	日本テレビ放送網
+TBS	6	JORX	JNN	東京放送	TBSテレビ
+CX	8	JOCX	FNN	フジテレビジョン
+EX	10	JOEX	ANN	テレビ朝日	旧社名:全国朝日放送,旧略称:ANB
+TX	12	JOTX	TXN	テレビ東京
+#富山
+KNB	1	JOLR	NNN	北日本放送
+TUT	32	JOJH	JNN	チューリップテレビ	旧局名:テレビユー富山
+BBT	34	JOTH	FNN	富山テレビ放送	旧略称:T34
+#石川
+KTK	33	JOWX	NNN	テレビ金沢
+MRO	6	JOMR	JNN	北陸放送
+ITC	37	JOIH	FNN	石川テレビ放送
+HAB	25	JOWY	ANN	北陸朝日放送
+#福井
+FBC	11	JOPR	NNN	福井放送
+FTB	39	JOFI	FNN	福井テレビジョン放送
+#			ANN	*福井放送
+#静岡
+SDT	31	JOSX	NNN	静岡第一テレビ
+SBS	11	JOVR	JNN	静岡放送
+SUT	35	JOQH	FNN	テレビ静岡
+SATV	33	JOSI	ANN	静岡朝日テレビ	旧局名:静岡けんみんテレビ
+#中京地区
+CTV	35	JOCH	NNN	中京テレビ放送
+CBC	5	JOAR	JNN	中部日本放送
+THK	1	JOFX	FNN	東海テレビ放送
+NBN	11	JOLX	ANN	名古屋テレビ放送	メ〜テレ
+TVA	25	JOCI	TXN	テレビ愛知
+#近畿
+YTV	10	JOIX	NNN	讀賣テレビ	よみうりテレビ
+MBS	4	JOOR	JNN	毎日放送
+KTV	8	JODX	FNN	関西テレビ
+ABC	6	JONR	ANN	朝日放送	ABCテレビ
+TVO	19	JOBH	TXN	テレビ大阪
+#徳島
+JRT	1	JOJR	NNN	四国放送
+#愛媛
+RNB	10	JOAF	NNN	南海放送
+ITV	29	JOEH	JNN	伊予テレビ	あいテレビ
+EBC	37	JOEI	FNN	愛媛放送	テレビ愛媛
+EAT	25	JOEY	ANN	愛媛朝日テレビ
+#高知
+RKC	8	JOZR	NNN	高知放送
+KUTV	38	JORI	JNN	テレビ高知
+KSS	40	JOQX	FNN	高知さんさんテレビ
+#岡山・香川
+RNC	9	JOKF	NNN	西日本放送
+RSK	11	JOYR	JNN	山陽放送
+OHK	35	JOOH	FNN	岡山放送
+KSB	33	JOVH	ANN	瀬戸内海放送
+TSC	23	JOPH	TXN	テレビせとうち
+#広島
+HTV	12	JONX	NNN	広島テレビ放送
+RCC	4	JOER	JNN	中国放送
+TSS	31	JORM	FNN	テレビ新広島
+HOME	35	JOGM	ANN	広島ホームテレビ
+#鳥取・島根
+NKT	1	JOJX	NNN	日本海テレビジョン放送
+BSS	10	JOHF	JNN	山陰放送
+TSK	34	JOMI	FNN	山陰中央テレビジョン放送
+#山口
+KRY	11	JOPF	NNN	山口放送
+TYS	38	JOLI	JNN	テレビ山口
+YAB	28	JOYX	ANN	山口朝日放送
+#福岡
+FBS	37	JOFH	NNN	福岡放送
+RKB	4	JOFR	JNN	RKB毎日放送
+TNC	9	JOHX	FNN	テレビ西日本
+KBC	1	JOIF	ANN	九州朝日放送
+TVQ	19	JOTY	TXN	TVQ九州放送	テレQ
+#佐賀
+STS	36	JOSH	FNN	サガテレビ
+#長崎
+NIB	25	JOXH	NNN	長崎国際テレビ
+NBC	5	JOUR	JNN	長崎放送
+KTN	37	JOWH	FNN	テレビ長崎
+NCC	27	JOXI	ANN	長崎文化放送
+#大分
+TOS	36	JOOI	NNN	テレビ大分
+OBS	5	JOGF	JNN	大分放送
+#			FNN	*テレビ大分
+OAB	24	JOBX	ANN	大分朝日放送
+#宮崎
+#			NNN	*テレビ宮崎
+MRT	10	JONF	JNN	宮崎放送
+UMK	35	JODI	FNN	テレビ宮崎
+#			ANN	*テレビ宮崎
+#熊本
+KKT	22	JOQI	NNN	熊本県民テレビ
+RKK	11	JOBF	JNN	熊本放送
+TKU	34	JOZH	FNN	テレビ熊本
+KAB	16	JOZI	ANN	熊本朝日放送
+#鹿児島
+KYT	30	JOUI	NNN	鹿児島読売テレビ
+MBC	1	JOCF	JNN	南日本放送
+KTS	38	JOKH	FNN	鹿児島テレビ放送
+KKB	32	JOTI	ANN	鹿児島放送
+#沖縄
+RBC	10	JORR	JNN	琉球放送
+OTV	8	JOOF	FNN	沖縄テレビ放送
+QAB	28	JORY	ANN	琉球朝日放送
+#独立系UHF局
+CTC	46	JOCL		千葉テレビ放送	ちばテレビ
+SUN	36	JOUH		サンテレビジョン
+GTV	48	JOML		群馬テレビ
+WTV	30	JOOM		テレビ和歌山
+TVS	38	JOUS		テレビ埼玉
+TVN	55	JONM		奈良テレビ放送
+TVK	42	JOKM		テレビ神奈川	tvk,旧局名:TVKテレビ
+BBC	30	JOBL		びわ湖放送
+GBS	37	JOZF		岐阜放送
+KBS	34	JOBR		京都放送	KBS京都
+MTV	33	JOMH		三重テレビ放送
+MX	14	JOMX		東京メトロポリタンテレビジョン	MXテレビ
+TTV	31	JOGY		とちぎテレビ
+#放送衛星, 通信衛星系
+JSB	BS5	JO33-BS		日本衛星放送	WOWOW

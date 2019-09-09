@@ -1,0 +1,11 @@
+
+0/300 terminals, -1/300 nonterminals
+1/600 grammar rules, 0/1000 states
+0 shift/reduce, 0 reduce/reduce conflicts reported
+0/350 working sets used
+memory: states,etc. 0/24000, parser 0/12000
+0/600 distinct lookahead sets
+0 extra closures
+0 shift entries, 0 exceptions
+0 goto entries
+0 entries saved by goto default

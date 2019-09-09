@@ -1,0 +1,111 @@
+###########################################################################
+##                                                                       ##
+##                 全国民放ラジオ局一覧表   (2004年8月20日現在)          ##
+##                                                                       ##
+##  略称<tab>本局の周波数<tab>コールサイン<tab>系列<tab>局名[<tab>備考]  ##
+##                                                                       ##
+###########################################################################
+#中波(周波数の単位kHz)
+HBC	1287	JOHR	JRN/NRN	北海道放送
+STV	1440	JOWF	NRN	札幌テレビ放送	STVラジオ
+RAB	1233	JOGR	JRN/NRN	青森放送
+ABS	936	JOTR	JRN/NRN	秋田放送
+IBC	684	JODF	JRN/NRN	岩手放送
+YBC	918	JOEF	JRN/NRN	山形放送
+TBC	1260	JOIR	JRN/NRN	東北放送
+RFC	1458	JOWR	JRN/NRN	ラジオ福島
+IBS	1197	JOYF	NRN	茨城放送
+CRT	1530	JOXF	NRN	栃木放送
+TBS	954	JOKR	JRN	TBSラジオ&コミュニケーションズ	TBSラジオ
+QR	1134	JOQR	NRN	文化放送
+LF	1242	JOLF	NRN	ニッポン放送
+RF	1422	JORF		アール・エフ・ラジオ日本	RFラジオ日本
+BSN	1116	JODR	JRN/NRN	新潟放送
+SBC	1098	JOSR	JRN/NRN	信越放送
+YBS	765	JOJF	JRN/NRN	山梨放送
+KNB	738	JOLR	JRN/NRN	北日本放送
+MRO	1107	JOMR	JRN/NRN	北陸放送
+FBC	864	JOPR	JRN/NRN	福井放送
+CBC	1053	JOAR	JRN	中部日本放送
+SF	1332	JOSF	NRN	東海ラジオ放送
+SBS	1404	JOVR	JRN/NRN	静岡放送
+GBS	1431	JOZF		岐阜放送	岐阜ラジオ
+KBS	1143	JOBR	NRN	京都放送	KBS京都,旧称:近畿放送
+WBS	1431	JOVF	JRN/NRN	和歌山放送
+MBS	1179	JOOR	JRN/NRN	毎日放送
+ABC	1008	JONR	JRN/NRN	朝日放送
+OBC	1314	JOUF	NRN	大阪放送	ラジオ大阪
+CR	558	JOCR		ラジオ関西	AM KOBE
+RSK	1494	JOYR	JRN/NRN	山陽放送
+BSS	900	JOHF	JRN/NRN	山陰放送
+KRY	765	JOPF	JRN/NRN	山口放送
+RCC	1350	JOER	JRN/NRN	中国放送
+RNC	1449	JOKF	JRN/NRN	西日本放送
+JRT	1269	JOJR	JRN/NRN	四国放送
+RNB	1116	JOAF	JRN/NRN	南海放送
+RKC	900	JOZR	JRN/NRN	高知放送
+RKB	1278	JOFR	JRN	アール・ケー・ビー毎日放送	RKBラジオ
+KBC	1413	JOIF	NRN	九州朝日放送
+OBS	1098	JOGF	JRN/NRN	大分放送
+NBC	1233	JOUR	JRN/NRN	長崎放送
+RKK	1197	JOBF	JRN/NRN	熊本放送
+MRT	936	JONF	JRN/NRN	宮崎放送
+MBC	1107	JOCF	JRN/NRN	南日本放送
+RBC	738	JORR	JRN	琉球放送
+ROK	864	JOXR	NRN	ラジオ沖縄
+#たんぱ
+NRB		JOZ		日経ラジオ社	ラジオNIKKEI,旧社名:日本短波放送,旧局名:ラジオたんぱ,旧略称:NSB
+#FM局(周波数の単位MHz)
+	80.4	JOFU-FM	JFN	エフエム北海道	AIR-G'
+	82.5	JOPV-FM	JFL	エフエム・ノースウェーブ
+AFB	80.0	JOWU-FM	JFN	エフエム青森
+AFM	82.8	JOPU-FM	JFN	エフエム秋田
+FMI	76.1	JOQU-FM	JFN	エフエム岩手
+	80.4	JOEV-FM	JFN	エフエム山形	Boy-FM
+FMS	77.1	JOJU-FM	JFN	エフエム仙台	Date fm
+	81.8	JOTV-FM	JFN	エフエム福島	ふくしまFM
+FMG	86.3	JORU-FM	JFN	エフエム群馬
+	76.4	JOSV-FM	JFN	エフエム栃木	レディオ・ベリー
+	79.5	JODV-FM		エフエム埼玉	NACK 5
+	78.0	JOGV-FM		エフエムサウンド千葉	BAY-FM
+TFM	80.0	JOAU-FM	JFN	エフエム東京	TOKYO FM
+	81.3	JOAV-FM	JFL	エフエムジャパン	J-WAVE
+	76.1	JODW-FM	MEGA-NET	エフエム・インターウェーブ	InterFM
+FRN	77.5	JOXU-FM	JFN	エフエムラジオ新潟	FM新潟
+	79.0	JOWV-FM	JFL	新潟県民エフエム	FM Port
+	84.7	JOTU-FM		横浜エフエム放送	ハマラジ,FM Yokohama
+	79.7	JOZU-FM	JFN	長野エフエム放送	FM長野
+FMF	83.0	JOCV-FM		エフエム富士	FM-FUJI
+	82.7	JOOU-FM	JFN	富山エフエム放送	FMとやま
+	80.5	JOHV-FM	JFN	エフエム石川	ハロー・ファイブ
+	76.1	JOLU-FM	JFN	福井エフエム放送	FM福井
+	79.2	JOKU-FM	JFN	静岡エフエム放送	K-MIX
+FMA	80.7	JOCU-FM	JFN	エフエム愛知	P-POP STATION,FM-AICHI
+	77.8	JOQV-FM	JFL	エフエム名古屋	ZIP-FM
+	79.5	JOGW-FM	MEGA-NET	愛知国際放送	Radio-i
+	80.0	JOXV-FM	JFN	岐阜エフエム放送	Radio80
+	78.9	JONU-FM	JFN	三重エフエム放送	FM三重
+	77.0	JOUV-FM	JFN	エフエム滋賀	E-Radio
+	89.4	JOKV-FM		エフエム京都	α-Station
+FMO	85.1	JOBU-FM	JFN	エフエム大阪
+	80.2	JOFV-FM	JFL	エフエムはちまるに	FM802
+	76.5	JOAW-FM	MEGA-NET	関西インターメディア	FM COCOLO
+	89.9	JOIV-FM	JFN	兵庫エフエムラジオ放送	Kiss-FM
+FSK	77.4	JOVU-FM	JFN	エフエム山陰	V-Air
+	76.8	JOVV-FM	JFN	岡山エフエム放送
+HFM	78.2	JOGU-FM	JFN	広島エフエム放送
+FMY	79.2	JOUU-FM	JFN	エフエム山口
+	80.7	JOMV-FM	JFN	エフエム徳島
+	79.7	JOEU-FM	JFN	エフエム愛媛
+	78.6	JOYU-FM	JFN	エフエム香川
+KFM	81.6	JOLV-FM	JFN	エフエム高知	Hi-6
+	80.7	JODU-FM	JFN	エフエム福岡	Beat Station
+	78.7	JORV-FM	JFL	エフエム九州	CROSS-FM
+	76.1	JOFW-FM	MEGA-NET	九州国際エフエム	Love FM
+	88.0	JOJV-FM	JFN	エフエム大分	Air Radio FM88
+FMN	79.5	JOHU-FM	JFN	エフエム長崎	SMILE-FM
+	77.9	JONV-FM	JFN	エフエム佐賀	MAGIC 9
+FMK	77.4	JOSU-FM	JFN	エフエム中九州
+	83.2	JOMU-FM	JFN	エフエム宮崎	JOY FM
+	79.8	JOOV-FM	JFN	エフエム鹿児島	μFM
+	87.3	JOIU-FM	JFN	エフエム沖縄

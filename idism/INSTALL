@@ -1,0 +1,38 @@
+		<< idism.pl インストールマニュアル >>
+
+● 通常インストール
+* i-dic の辞書は 9511a 以降の EUC コードのものを用意してください。
+* perl は 4.0.1.8 以降(5.001を含む)のものを用意してください。
+
+(1) idism.pl の先頭行の perl のパスを自分のマシンの perl のパスに
+    変更します。
+
+(2) config.ph の i-dic のパスを i-dic の辞書が置かれているパスに
+    変更します。
+
+	$IDIC_PATH="/usr/local/lib/i-dic-9511a/i-dic";
+
+(3) Makefile を適切に変更します。
+
+     a) インストールディレクトリ
+	BINDIR  =/usr/local/share/bin
+
+     b) idism.pl のモード
+	INSTALL_MODE = 0755
+
+     c) 各ファイルのグループ
+	INSTALL_GRP = local
+
+(4) make install でインストールされます。
+
+● syntax.y をコンパイルする場合
+   ユーザが syntax.y を変更した場合、yacc によって syntax.y をコンパイル
+   しなければなりません。コンパイルには、
+
+	byacc: Berkeley yacc version 1.8.2 (C or perl)
+
+   の yacc が必要です。
+
+(1) make をする。
+
+(2) 通常インストールと同じ作業を行う。

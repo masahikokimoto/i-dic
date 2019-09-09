@@ -1,0 +1,270 @@
+                  【idism.pl コマンドオプション】
+
+<実行形式>
+idism [-h] [-v] [-p] [-l] [-d 辞書名] [--] 検索式 ...
+
+-h	簡単なオプションの説明を表示します。
+
+-v	idism のバージョンを表示します。
+
+-l	ローマ字をすべて小文字で評価します。
+
+-p      通常は各アイドルのデータを辞書の形式のまま出力しますが、このオプショ
+        ンを指定すると簡易フォーマットを行って表示します。
+
+-d 辞書名
+	辞書ファイル名を指定します。
+
+--	この後に評価式が続くことを明示的に示します。
+
+検索式
+	人物を検索する式を記述します。複数に分けて記述しても同じ意味を持ち
+	ます。
+	たとえば
+
+		'RomanName eq "KiTaURa ToMoE"'
+
+	と
+
+		RomanName eq '"KiTaURa ToMoE"'
+
+	は同じ意味です。
+
+                             【検索式】
+
+検索式は人物のデータを検索するために指定する式です。表記は perl 言語の式の
+表記に似ています。指定された式が真になる人物が選択されます。
+以下に検索式に使用できる演算子を示します。
+※ expr, expr1, expr2, expr3 は式を示します。
+
+<演算子>
+
+expr1 + expr2	加算,		expr1 - expr2	減算
+expr1 * expr2	乗算,		expr1 / expr2	除算
+expr1 % expr2	除余,		!expr		否定
+expr1 , expr2	コンマ,		(expr)		括弧
+
+<比較演算子>
+
+expr1 < expr2		比較(この他 >, <=, >=, ==, != が使用できる)
+expr1 || expr2		OR
+expr1 && expr2  	AND
+KEY =~ expr		expr は perl の正規表現が使用できます
+expr1 eq expr2		文字列の比較(等しい)
+expr1 ne expr2		文字列の比較(等しくない)
+
+expr1 ? expr2 : expr3	三項演算子
+expr1 .. KEY .. expr2	範囲(expr1 >= KEY && KEY <= expr2 と同じ)
+			KEY は以下で示すキーワードの名前を記述する
+
+<キーワード>
+idism は検索式内に数値定数(10進整数)以外にキーワードを記述することができま
+す。これらのキーワードは各人物のデータの数値に対応しています。キーワードは
+大文字と小文字は区別しているので注意して下さい。なお、データがないものは文
+字列なら空文字列、数値なら 0 が入っています。
+
+(1) i-dic の各フィールドに対応しているキーワード
+
+キーワード名		型		意味
+--------------------------------------------------------------
+Name			文字列		名前の読み(かな)
+Description		文字列		表記(漢字)
+Note			文字列		備考
+ID			数値		ID
+BirthYear		数値		誕生年
+BirthMonth		数値		誕生月
+BirthDay		数値		誕生日
+Classification		数値		分類
+BloodType		文字列		血液型
+Height			数値		身長
+Bust			数値		バスト
+Waist			数値		ウエスト
+Hip			数値		ヒップ
+Weight			数値		体重
+Office			文字列		事務所
+RecordCompany		文字列		レコード会社
+RealName		文字列		本名
+HomeCity		文字列		出身地
+DebutYear		数値		デビュー年
+DebutMonth		数値		デビュー月
+DebutDay		数値		デビュー日
+DebutWork		文字列		デビュー作品
+Group			文字列		所属グループ名など
+Contest			文字列		コンテスト/オーディション
+MusicSchool		文字列		音楽学校
+Momogumi		数値		桃組
+Onyanko			数値		おニャン子
+Otomejuku		数値		乙女塾
+HigLegClub		数値		ハイレグクラブ
+HarajukuTankentai	数値		原宿探険隊
+BikanShoujo		数値		美感少女
+Movie			文字列		映画
+TV			文字列		テレビ
+Radio			文字列		ラジオ
+Video			文字列		ビデオ
+Play			文字列		演劇
+Voice			文字列		声の出演
+Book			文字列		書籍
+CF			文字列		CF
+Single			文字列		シングル
+Album			文字列		アルバム
+Relation		文字列		縁戚
+Education		文字列		学歴
+Adult			文字列		アダルト作品
+Rename			文字列		改名履歴
+OtherMedia		文字列		その他のメディア
+
+(2) i-dic の各フィールドに対応しているキーワードの別名
+
+キーワード名	同じ意味のキーワード
+------------------------------------
+class		Classification
+blood		BloodType
+byear		BirthYear
+bmonth		BirthMonth
+bday		BirthDay
+T		Height
+B		Bust
+W		Waist
+H		Hip
+dyear		DebutYear
+dmonth		DebutMonth
+dday		DebutDay
+
+(3) i-dic の情報から計算されて設定されるキーワード
+
+キーワード名		型		意味
+--------------------------------------------------------------
+Age			数値		年齢
+Zodiac			文字列		星座
+FamilyName		文字列		姓の読み(かな)
+GivenName		文字列		名の読み(かな)
+FamilyNameDescription	文字列		姓の表記(漢字)
+GivenNameDescription	文字列		名の表記(漢字)
+RomanName		文字列		名前の読み(ローマ字)
+RomanFamilyName		文字列		姓の読み(ローマ字)
+RomanGivenName		文字列		名の読み(ローマ字)
+Initial			文字列		イニシャル
+FamilyNameInitial	文字列		姓のイニシャル
+GivenNameInitial	文字列		名のイニシャル
+BirthDate		文字列		誕生年月日(yyyy/mm/dd)
+DebutDate		文字列		デビュー年月日(yyyy/mm/dd)
+Sex			数値		性別
+
+● 年齢は計算できない場合は 0 が設定されます。
+
+● 星座は以下の文字列が設定されます。
+
+設定される文字列	意味
+-------------------------------
+"Capricon"		山羊座
+"Aquarius"	        水瓶座
+"Pisces"		魚座
+"Aries"			牡羊座
+"Taurus"		牡牛座
+"Gemini"		双子座
+"Cancer"		蟹座
+"Leo"			獅子座
+"Virgo"			乙女座
+"Libra"			天秤座
+"Scorpio"		蠍座
+"Sagittarius"		射手座
+
+● ローマ字の表記は各音の先頭文字を大文字にして設定されます。
+
+   例) "わたなべ みなよ" → "WaTaNaBe MiNaYo"
+       "あんとん うぃっきー" → "ANToN WiKKi-"
+
+   なお、コマンドラインに -l オプションを指定するとすべて小文字になります。
+
+   例) "わたなべ みなよ" → "watanabe minayo"
+
+● イニシャルは英大文字で "姓" "名" の順になります。姓名に区切りがない場合
+   は１文字になります。
+
+   例) "わたなべ みなよ" → "WM"
+
+● 性別は 男性=1,女性=2,不明=0 が設定されます。
+
+(4) その他のキーワード
+キーワード名		型		意味
+--------------------------------------------------------------
+NewYear			数値		現在の年
+NowMonth		数値		現在の月
+NowDay			数値		現在の日
+
+<定数キーワード>
+評価式を記述しやすくするためにいくつかの定数を持ったキーワードがあります。
+
+キーワード名		型		意味(内容)
+--------------------------------------------------------------
+All			数値		真
+True			数値		真
+False			数値		偽
+Male			数値		1
+Female			数値		2
+Null			文字列		空文字列
+ClassMaleName		数値		分類:姓名(男性)
+ClassFemaleName		数値		分類:姓名(女性)
+ClassUnknownName	数値		分類:姓名(不明)
+ClassTrancatedName	数値		分類:姓名の略した読み
+ClassNameFromNickname	数値		分類:あだ名から姓名へ
+ClassNickname		数値		分類:あだ名
+ClassPhrase		数値		分類:口癖など
+ClassPlaceName		数値		分類:地名
+ClassCompanyName	数値		分類:企業名
+ClassBuildingName	数値		分類:建物名
+ClassDesignerName	数値		分類:デザイナー姓名
+ClassProductName	数値		分類:商品名
+ClassPartyName		数値		分類:団体名
+ClassProgramName	数値		分類:番組名
+ClassSchoolName		数値		分類:学校名
+ClassFamilyName		数値		分類:姓
+ClassGivenName		数値		分類:名前
+Class_ProperNoun	数値		分類:固有名詞
+Class_Adjective		数値		分類:形容詞
+Class_Adjective_Verb	数値		分類:形容動詞
+Class_Adverb		数値		分類:副詞
+Class_Rentai_shi	数値		分類:連体詞
+Class_Conjunction	数値		分類:接続詞
+Class_Numeral		数値		分類:助数詞
+Class_Emotion		数値		分類:感動詞
+Class_Noun		数値		分類:名詞
+Class_NounSa		数値		分類:サ変名詞
+Class_Verb		数値		分類:動詞
+
+<文字列定数>
+idism は文字列も扱ことができます。文字列定数は " (ダブルクォート)で囲みま
+す。ローマ字の名前は全て小文字で表記して下さい。また、ローマ字表記において
+は "ー" は - を使用します。漢字の場合は EUC を使用します。
+
+
+                                 【例】
+
+●「身長150cm〜160cm で天秤座の人」
+
+	150..Height..160 && Zodiac eq "Libra"
+
+●「年齢２０以下で血液型がＡ型かＯ型の人」
+
+	Age <= 20 && (BloodType eq "A" || BloodType eq "O")
+
+   データが登録されていない場合には変数は 0 の値を持ちますので、上の例では
+   Age <= 20 とすると年齢(生年月日)が登録されていない人物も表示されてしま
+   います。従って、上記例で年齢が登録されていない人物を除くには、
+
+	Age <= 20 && Age != 0 && (BloodType eq "A" || BloodType eq "O")
+
+   とします。これは、
+
+	1..Age..20 (BloodType eq "A" || BloodType eq "O")
+
+   でも同じです。
+
+●「名前が『ゆき』という女性」
+
+	Sex == Female && RomanFamilyName eq "YuKi"
+
+●「名前の先頭が『ゆき』という文字の女性」
+
+	Sex == Female && RomanFamilyName =~ "^YuKi"
